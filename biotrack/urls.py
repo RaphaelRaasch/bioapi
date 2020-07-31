@@ -9,16 +9,18 @@ from motoristas.views import MotoristaViewSet
 from mtr.views import MtrViewSet
 from mtritem.views import MtrItemViewSet
 from sequencia.views import SequenciaViewset
+from usuarios.views import UserViewSet 
 
 router = routers.DefaultRouter()
-router.register(r'mtr', MtrViewSet)
-router.register(r'mtritem', MtrItemViewSet)
-router.register(r'cliente', ClienteViewSet)
+router.register(r'mtrs', MtrViewSet)
+router.register(r'mtritems', MtrItemViewSet)
+router.register(r'clientes', ClienteViewSet)
+router.register(r'usuarios', UserViewSet)
 
 
-router.register(r'sequencia', SequenciaViewset)
+router.register(r'sequencias', SequenciaViewset)
 router.register(r'motoristas', MotoristaViewSet)
-router.register(r'caminhao', CaminhaoViewSet)
+router.register(r'caminhoes', CaminhaoViewSet)
 
 
 
