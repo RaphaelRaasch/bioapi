@@ -7,6 +7,8 @@ from sequencia.models import Sequencia
 class MtrItem(models.Model):
     mtr = models.ForeignKey(Mtr, on_delete=models.CASCADE)
     sequencia = models.ManyToManyField(Sequencia)
+    lat = models.CharField('Latitude', max_length=20)
+    long = models.CharField('Longitude', max_length=20)
 
     def __str__(self):
         return f'{self.mtr}'
