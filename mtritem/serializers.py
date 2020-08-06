@@ -8,4 +8,4 @@ class MtrItemSerializer(ModelSerializer):
     mtr = MtrSerializer(many=False, read_only=True)
     class Meta:
         model = MtrItem
-        fields = ('id','mtr','sequencia', 'lat', 'long')
+        fields = ('id','mtr','sequencia')
