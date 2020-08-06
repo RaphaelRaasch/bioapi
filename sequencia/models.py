@@ -12,6 +12,8 @@ class Sequencia(models.Model):
     bairro = models.CharField('Bairro', max_length=155)
     municipio = models.CharField('Municipio', max_length=155)
     estado = models.CharField('Estado', max_length=155)
+    lat = models.CharField('Latitude', max_length=20)
+    long = models.CharField('Longitude', max_length=20)
 
     def __str__(self):
         return f'{self.mtr}'

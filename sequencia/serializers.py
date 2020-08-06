@@ -7,4 +7,4 @@ class SequenciaSerializers(ModelSerializer):
     
     class Meta:
         model = Sequencia
-        fields = ('numero', 'mtr', 'cliente', 'rua', 'numero', 'bairro', 'municipio', 'estado')
+        fields = ('numero', 'mtr', 'cliente', 'rua', 'numero', 'bairro', 'municipio', 'estado', 'lat', 'long')
