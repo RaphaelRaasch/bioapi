@@ -6,7 +6,7 @@ from caminhoes.models import Caminhoes
 
 
 class Mtr(models.Model):
-    numero = models.IntegerField('Numero')
+    numero = models.IntegerField('Numero', primary_key=True)
     motorista = models.ForeignKey(Motoristas, on_delete=models.CASCADE)
     alias = models.CharField('alias', max_length=155) 
     saida = models.DateTimeField('Data e hora da saida', blank=True, null=True)
