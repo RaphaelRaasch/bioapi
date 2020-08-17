@@ -6,7 +6,7 @@ from clientes.serializers import ClienteSerializer
 
 class SequenciaSerializers(ModelSerializer):
 
-    cliente = ClienteSerializer(many=False)
+    cliente = ClienteSerializer(many=False,)
 
     class Meta:
         model = Sequencia

@@ -3,7 +3,7 @@ from usuarios.models import CustomUsuario
 
 
 class Cliente(models.Model):
-    id_multidev = models.IntegerField('Id Multidev')
+    id_multidev = models.IntegerField('Id Multidev', primary_key=True)
     razao_social = models.CharField('Razão Social', max_length=115)
     fantasia = models.CharField('Nome Fantasia', max_length=115)
     gestao = models.ForeignKey(CustomUsuario, on_delete=models.CASCADE)
