@@ -1,7 +1,7 @@
 from django.db import models
 from usuarios.models import CustomUsuario
 
-
+#
 class Cliente(models.Model):
     id_multidev = models.IntegerField('Id Multidev', primary_key=True)
     razao_social = models.CharField('Razão Social', max_length=115)
