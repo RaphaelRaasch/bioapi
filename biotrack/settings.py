@@ -25,7 +25,7 @@ SECRET_KEY = '9+#2bdee^et_)-4*ekwg(kx8ewf&-o@*7%le%n$#nuzsf!f(6u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['192.168.2.21']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'sequencia',
     'mtr',
     'mtritem',
+    'viagem',
     'rest_framework',
     'rest_framework.authtoken'
 ]
@@ -81,13 +82,23 @@ WSGI_APPLICATION = 'biotrack.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
+'''DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': 'mypassword',
+        'HOST': 'db',
+        'PORT': '3306'
+    }
 }'''
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'multidev',
@@ -96,7 +107,7 @@ DATABASES = {
         'HOST': 'mysql.multidev.com.br',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
-}
+}'''
 
 
 # Password validation

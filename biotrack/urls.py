@@ -10,6 +10,7 @@ from mtr.views import MtrViewSet
 from mtritem.views import MtrItemViewSet
 from sequencia.views import SequenciaViewset
 from usuarios.views import UserViewSet 
+from viagem.views import ViagemViewSet
 
 router = routers.DefaultRouter()
 router.register(r'mtrs', MtrViewSet)
@@ -21,6 +22,7 @@ router.register(r'usuarios', UserViewSet)
 router.register(r'sequencias', SequenciaViewset)
 router.register(r'motoristas', MotoristaViewSet)
 router.register(r'caminhoes', CaminhaoViewSet)
+router.register(r'viagem', ViagemViewSet)
 
 
 
