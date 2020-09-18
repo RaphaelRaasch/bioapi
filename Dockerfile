@@ -4,5 +4,4 @@ RUN mkdir /code
 WORKDIR /code
 ADD . /code/
 RUN pip install --upgrade pip && pip install -r requirements.txt
-RUN pip install mysqlclient
 COPY . /code/
